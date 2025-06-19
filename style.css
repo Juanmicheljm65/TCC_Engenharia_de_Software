@@ -99,7 +99,7 @@ body {
     background: white;
     border-radius: 20px;
     padding: 2rem;
-    margin: 2rem;
+    margin: 0 2rem 2rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .form-group input,
-.form-group select {
+.form-group select, select {
     padding: 0.75rem;
     border: 2px solid #e1e5e9;
     border-radius: 10px;
@@ -137,10 +137,21 @@ body {
     transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('seta.png') no-repeat right center;
+    background-position: calc(100% - 10px) center;
+    background-size: 16px;
+}
+
+.form-group input:hover,
+.form-group select:hover, select:hover {
+    cursor: pointer;
     outline: none;
     border-color: #667eea;
+    overflow: hidden;
 }
 
 .search-btn {
@@ -167,7 +178,7 @@ body {
     background: white;
     border-radius: 20px;
     padding: 2rem;
-    margin: 2rem;
+    margin: 2rem 2rem 0;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     min-height: 400px;
 }
@@ -186,12 +197,12 @@ body {
     color: #333;
 }
 
-.sort-select {
+/* .sort-select {
     padding: 0.5rem 1rem;
     border: 2px solid #e1e5e9;
     border-radius: 8px;
     background: white;
-}
+} */
 
 .property-grid {
     display: grid;
@@ -332,7 +343,7 @@ body {
 .footer {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 3rem 0 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }

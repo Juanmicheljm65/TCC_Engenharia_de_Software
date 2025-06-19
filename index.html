@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <div class="container">
             <nav class="nav">
                 <div class="logo">🏠 ImovelHub</div>
@@ -17,7 +17,6 @@
                     <li><a href="#home">Início</a></li>
                     <li><a href="#search">Buscar</a></li>
                     <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +37,7 @@
             </div>
         </section>
 
-        <section class="search-section">
+        <section class="search-section" id="search">
             <div class="container">
                 <h2 class="search-title">🔍 Filtrar Imóveis</h2>
                 <form class="search-form" id="searchForm">
@@ -59,7 +58,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="transaction">Transação</label>
+                        <label for="transaction">Imóveis para:</label>
                         <select id="transaction" name="transaction">
                             <option value="">Aluguel e Venda</option>
                             <option value="aluguel">Aluguel</option>
@@ -144,7 +143,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-section">
+                <div id="about" class="footer-section">
                     <h3>🎓 Projeto Acadêmico</h3>
                     <p>Este protótipo foi desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC) em
                         Engenharia de Software.</p>
