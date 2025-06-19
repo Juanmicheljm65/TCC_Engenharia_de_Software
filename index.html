@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImovelHub - Agregador de Imóveis</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -25,8 +27,9 @@
         <section class="hero">
             <div class="container">
                 <h1>Encontre Seu Imóvel Ideal</h1>
-                <p>Todos os anúncios de imóveis em um só lugar. Economize tempo e encontre as melhores oportunidades.</p>
-                
+                <p>Todos os anúncios de imóveis em um só lugar. Economize tempo e encontre as melhores oportunidades.
+                </p>
+
                 <div class="sources">
                     <div class="source-badge">📱 OLX</div>
                     <div class="source-badge">🏢 Zap Imóveis</div>
@@ -43,7 +46,7 @@
                         <label for="location">Localização</label>
                         <input type="text" id="location" name="location" placeholder="Cidade, bairro ou região">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="type">Tipo</label>
                         <select id="type" name="type">
@@ -54,7 +57,7 @@
                             <option value="cobertura">Cobertura</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="transaction">Transação</label>
                         <select id="transaction" name="transaction">
@@ -63,17 +66,17 @@
                             <option value="venda">Venda</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="minPrice">Preço Mínimo</label>
                         <input type="number" id="minPrice" name="minPrice" placeholder="R$ 0">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="maxPrice">Preço Máximo</label>
                         <input type="number" id="maxPrice" name="maxPrice" placeholder="R$ 999.999">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="bedrooms">Quartos</label>
                         <select id="bedrooms" name="bedrooms">
@@ -85,9 +88,9 @@
                         </select>
                     </div>
                 </form>
-                
+
                 <button class="search-btn" onclick="searchProperties()">
-                    Buscar Imóveis 
+                    Buscar Imóveis
                 </button>
             </div>
         </section>
@@ -105,12 +108,12 @@
                         <option value="newest">Mais recentes</option>
                     </select>
                 </div>
-                
+
                 <div id="loadingState" class="loading" style="display: none;">
                     <div class="loading-spinner"></div>
                     <p>Buscando imóveis em todas as plataformas...</p>
                 </div>
-                
+
                 <div class="property-grid" id="propertyGrid">
                     <div style="text-align: center; padding: 2rem; color: #666; grid-column: 1 / -1;">
                         <p>👆 Use os filtros acima para encontrar seu imóvel ideal</p>
@@ -125,10 +128,11 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>🏠 ImovelHub</h3>
-                    <p>Plataforma agregadora de anúncios de imóveis que reúne as melhores oportunidades de OLX, Zap Imóveis e Quinto Andar em um só lugar.</p>
+                    <p>Plataforma agregadora de anúncios de imóveis que reúne as melhores oportunidades de OLX, Zap
+                        Imóveis e Quinto Andar em um só lugar.</p>
                     <p>Economize tempo e encontre o imóvel perfeito para você!</p>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>📋 Funcionalidades</h3>
                     <ul>
@@ -139,29 +143,34 @@
                         <li>• Resultados em tempo real</li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>🎓 Projeto Acadêmico</h3>
-                    <p>Este protótipo foi desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC) em Engenharia de Software.</p>
-                    <p><strong>Objetivo:</strong> Demonstrar como uma plataforma agregadora pode melhorar a experiência de busca por imóveis.</p>
+                    <p>Este protótipo foi desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC) em
+                        Engenharia de Software.</p>
+                    <p><strong>Objetivo:</strong> Demonstrar como uma plataforma agregadora pode melhorar a experiência
+                        de busca por imóveis.</p>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>🔗 Fontes de Dados</h3>
                     <ul>
                         <li><a href="#" onclick="alert('Em um sistema real, este link levaria ao OLX')">📱 OLX</a></li>
-                        <li><a href="#" onclick="alert('Em um sistema real, este link levaria ao Zap Imóveis')">🏢 Zap Imóveis</a></li>
-                        <li><a href="#" onclick="alert('Em um sistema real, este link levaria ao Quinto Andar')">🏘️ Quinto Andar</a></li>
+                        <li><a href="#" onclick="alert('Em um sistema real, este link levaria ao Zap Imóveis')">🏢 Zap
+                                Imóveis</a></li>
+                        <li><a href="#" onclick="alert('Em um sistema real, este link levaria ao Quinto Andar')">🏘️
+                                Quinto Andar</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <div class="tcc-info">
                     Trabalho de Conclusão de Curso - Engenharia de Software
                 </div>
                 <p><strong>Desenvolvido por:</strong> Juan Michel Aguiar Miguel</p>
-                <p><strong>Tema:</strong> Transformando a experiência de busca de imóveis: Desenvolvimento de um Protótipo de site agregador de anúncios</p>
+                <p><strong>Tema:</strong> Transformando a experiência de busca de imóveis: Desenvolvimento de um
+                    Protótipo de site agregador de anúncios</p>
                 <p>São Paulo, SP - 2025</p>
                 <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
                     © 2025 ImovelHub - Protótipo Acadêmico. Todos os dados são simulados para fins demonstrativos.
@@ -169,6 +178,8 @@
             </div>
         </div>
     </footer>
-    <script src="/script.js"/>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
