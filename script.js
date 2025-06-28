@@ -207,7 +207,7 @@ const mockProperties = [
         area: 90,
         source: "quinto",
         tags: ["Geladeira quebrada", "Jhonnys Jhonnys", "Fanta", "Incendio", "Unhas combinando com pano", "Chuveiro queimado"],
-        image: "🎨"
+        image: "🕳️"
     },
  {
         id: 16,
