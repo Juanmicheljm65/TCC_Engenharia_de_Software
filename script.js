@@ -206,7 +206,7 @@ const mockProperties = [
         bathrooms: 2,
         area: 90,
         source: "quinto",
-        tags: ["Geladeira quebrada", "Jhonnys Jhonnys", "Fanta", "Incendio", "Unhas combinando com pano", "Chuveiro queimado"],
+        tags: ["Geladeira quebrada", "Jhonnys Jhonnys", "Fanta", "Incendio", "Unhas combinando com pano", "Chuveiro queimado", "Buracos misteriosos"],
         image: "🕳️"
     },
  {
