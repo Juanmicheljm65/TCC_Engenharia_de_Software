@@ -1,6 +1,4 @@
-// Dados simulados dos imóveis - Expandidos para cobrir todos os filtros
 const mockProperties = [
-    // Apartamentos para Aluguel
     {
         id: 1,
         title: "Apartamento moderno no Copacabana",
@@ -57,8 +55,6 @@ const mockProperties = [
         tags: ["Vista mar", "Portaria", "Varanda"],
         image: "🌊"
     },
-
-    // Casas para Aluguel
     {
         id: 5,
         title: "Casa aconchegante em Tijuca",
@@ -101,8 +97,6 @@ const mockProperties = [
         tags: ["Condomínio fechado", "Piscina", "Churrasqueira"],
         image: "🏊"
     },
-
-    // Studios para Aluguel
     {
         id: 8,
         title: "Studio compacto na Barra",
@@ -119,20 +113,18 @@ const mockProperties = [
     },
     {
         id: 9,
-        title: "Studio moderno em Botafogo",
+        title: "Studio em Vigário Geral",
         price: 2800,
-        location: "Botafogo, Rio de Janeiro",
+        location: "Vigário Geral, Rio de Janeiro",
         type: "studio",
         transaction: "aluguel",
         bedrooms: 1,
         bathrooms: 1,
         area: 40,
         source: "zap",
-        tags: ["Mobiliado", "Vista cidade", "Metrô"],
+        tags: ["Tranquilo", "Luz e Água de qualidade", "Vizinhança boa"],
         image: "🌆"
     },
-
-    // Coberturas para Aluguel
     {
         id: 10,
         title: "Cobertura duplex em Copacabana",
@@ -147,8 +139,6 @@ const mockProperties = [
         tags: ["Terraço", "Vista panorâmica", "Churrasqueira"],
         image: "🌅"
     },
-
-    // Apartamentos para Venda
     {
         id: 11,
         title: "Apartamento novo em Jacarepaguá",
@@ -165,17 +155,17 @@ const mockProperties = [
     },
     {
         id: 12,
-        title: "Apartamento reformado em Flamengo",
-        price: 850000,
-        location: "Flamengo, Rio de Janeiro",
-        type: "apartamento",
+        title: "Casa de festa em Volta Redonda",
+        price: 320000,
+        location: "Volta Redonda, Rio de Janeiro",
+        type: "casa",
         transaction: "venda",
-        bedrooms: 3,
-        bathrooms: 2,
-        area: 95,
-        source: "quinto",
-        tags: ["Reformado", "Praia próxima", "Transporte"],
-        image: "🏖️"
+        bedrooms: 2,
+        bathrooms: 1,
+        area: 80,
+        source: "olx",
+        tags: ["Quebradeira", "Noites alucinantes", "Choradeira", "Capricho"],
+        image: "🏠"
     },
     {
         id: 13,
@@ -191,8 +181,6 @@ const mockProperties = [
         tags: ["Luxo", "Vista mar", "Portaria 24h"],
         image: "💎"
     },
-
-    // Casas para Venda
     {
         id: 14,
         title: "Casa espaçosa em Ipanema",
@@ -209,48 +197,46 @@ const mockProperties = [
     },
     {
         id: 15,
-        title: "Casa de vila em Santa Teresa",
+        title: "GH de Niterói",
         price: 680000,
-        location: "Santa Teresa, Rio de Janeiro",
+        location: "Niterói, Rio de Janeiro",
         type: "casa",
         transaction: "venda",
         bedrooms: 2,
         bathrooms: 2,
         area: 90,
         source: "quinto",
-        tags: ["Histórico", "Charme", "Arte"],
+        tags: ["Geladeira quebrada", "Jhonnys Jhonnys", "Fanta", "Incendio", "Unhas combinando com pano", "Chuveiro queimado"],
         image: "🎨"
     },
-    {
+ {
         id: 16,
-        title: "Casa térrea em Bangu",
-        price: 320000,
-        location: "Bangu, Rio de Janeiro",
-        type: "casa",
+        title: "Apartamento reformado em Flamengo",
+        price: 850000,
+        location: "Flamengo, Rio de Janeiro",
+        type: "apartamento",
         transaction: "venda",
-        bedrooms: 2,
-        bathrooms: 1,
-        area: 80,
-        source: "olx",
-        tags: ["Primeira casa", "Quintal amplo", "Garagem"],
-        image: "🏠"
+        bedrooms: 3,
+        bathrooms: 2,
+        area: 95,
+        source: "quinto",
+        tags: ["Reformado", "Praia próxima", "Transporte"],
+        image: "🏖️"
     },
     {
         id: 17,
-        title: "Casa de alto padrão em São Conrado",
+        title: "Casa com 3 andares em Parada de Lucas",
         price: 3200000,
-        location: "São Conrado, Rio de Janeiro",
+        location: "Parada de Lucas, Rio de Janeiro",
         type: "casa",
         transaction: "venda",
         bedrooms: 4,
         bathrooms: 4,
         area: 300,
         source: "zap",
-        tags: ["Condomínio", "Vista montanha", "Piscina"],
+        tags: ["Xarope", "Escada construida com amor", "Boas opções de internet"],
         image: "🏔️"
     },
-
-    // Studios para Venda
     {
         id: 18,
         title: "Studio investimento em Centro",
@@ -279,8 +265,6 @@ const mockProperties = [
         tags: ["Novo", "Praia", "Academia"],
         image: "🏄"
     },
-
-    // Coberturas para Venda
     {
         id: 20,
         title: "Cobertura com vista para o mar",
@@ -309,24 +293,20 @@ const mockProperties = [
         tags: ["Duplex", "Terraço gourmet", "Elevador"],
         image: "🏠"
     },
-
-    // Imóveis com 1 quarto
     {
         id: 22,
-        title: "Apartamento compacto em Laranjeiras",
+        title: "Casa/Loja em Pinheiral com vista para Rio Paraíba",
         price: 1900,
-        location: "Laranjeiras, Rio de Janeiro",
+        location: "Pinheiral, Rio de Janeiro",
         type: "apartamento",
         transaction: "aluguel",
         bedrooms: 1,
         bathrooms: 1,
         area: 50,
         source: "quinto",
-        tags: ["Metrô próximo", "Supermercado", "Farmácia"],
+        tags: ["Ônibus de qualidade", "Morcegos", "Pia para crianças", "Tatuagens lindas", "Vista maravilhosa", "Poeira"],
         image: "🚇"
     },
-
-    // Mais opções para diferentes faixas de preço
     {
         id: 23,
         title: "Apartamento econômico em Realengo",
@@ -361,11 +341,9 @@ let filteredProperties = [];
 let currentSort = 'relevance';
 
 function searchProperties() {
-    // Mostrar loading
     document.getElementById('loadingState').style.display = 'block';
     document.getElementById('propertyGrid').innerHTML = '';
 
-    // Simular delay de busca
     setTimeout(() => {
         const formData = new FormData(document.getElementById('searchForm'));
         const filters = {
@@ -377,7 +355,6 @@ function searchProperties() {
             bedrooms: parseInt(formData.get('bedrooms')) || 0
         };
 
-        // Filtrar propriedades
         filteredProperties = mockProperties.filter(property => {
             return (
                 (filters.location === '' || property.location.toLowerCase().includes(filters.location)) &&
@@ -476,7 +453,6 @@ function viewProperty(id) {
     alert(`🏠 ${property.title}\n💰 ${property.transaction === 'venda' ? 'R$ ' + property.price.toLocaleString('pt-BR') : 'R$ ' + property.price.toLocaleString('pt-BR') + '/mês'}\n📍 ${property.location}\n\nEm um site real, isso abriria os detalhes do imóvel!`);
 }
 
-// Busca inicial para mostrar alguns resultados
 setTimeout(() => {
     filteredProperties = mockProperties.slice(0, 24);
     displayResults();
